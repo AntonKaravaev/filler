@@ -6,7 +6,7 @@
 /*   By: crenly-b <crenly-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/15 13:35:46 by crenly-b          #+#    #+#             */
-/*   Updated: 2019/07/19 18:58:18 by crenly-b         ###   ########.fr       */
+/*   Updated: 2019/07/20 22:38:17 by crenly-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,19 @@
 
 typedef struct	s_map
 {
-	char	**map;
+	int		**map;
+	char	str[5];
 	size_t	length;
 	int		hight;
 	int		width;
+	int		enemy;
+	int		num;
 	int		i;
+	int		j;
 	enum {
 			player1,
 			player2
-	}		i_am;
+	}		i_am : 1;
 }				t_map;
 
 typedef struct	s_piece
@@ -36,9 +40,18 @@ typedef struct	s_piece
 	char	**map;
 	int		hight;
 	int		width;
+	int		connection;
+	int		temp_i;
+	int		temp_j;
+	int		tempsum;
+	int		best_i;
+	int		best_j;
+	int		bestsum;
 }				t_p;
 
 void	ft_mapcreate(char *line, t_map *map);
 void	ft_catchpiece(char *line, t_p *p);
+char	*ft_fromnbrtos(int n, t_map *map);
+void	ft_findposition(t_map *map, t_p *p);
 
 #endif

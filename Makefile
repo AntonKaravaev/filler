@@ -1,10 +1,12 @@
 NAME = crenly-b.filler
 
 SRCS = 	main.c\
-		ft_creates.c
+		ft_creates.c\
+		ft_findposition.c
 
 OBJ = 	main.o\
-		ft_creates.o
+		ft_creates.o\
+		ft_findposition.o
 
 INC = includes/
 
