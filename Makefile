@@ -1,12 +1,18 @@
 NAME = crenly-b.filler
 
 SRCS = 	main.c\
-		ft_creates.c\
-		ft_findposition.c
+		ft_parsingformap.c\
+		ft_piece.c\
+		ft_mydecision.c\
+		ft_findposition.c\
+		ft_supfun.c
 
 OBJ = 	main.o\
-		ft_creates.o\
-		ft_findposition.o
+		ft_parsingformap.o\
+		ft_piece.o\
+		ft_mydecision.o\
+		ft_findposition.o\
+		ft_supfun.o
 
 INC = includes/
 

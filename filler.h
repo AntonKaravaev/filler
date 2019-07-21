@@ -6,7 +6,7 @@
 /*   By: crenly-b <crenly-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/15 13:35:46 by crenly-b          #+#    #+#             */
-/*   Updated: 2019/07/20 22:38:17 by crenly-b         ###   ########.fr       */
+/*   Updated: 2019/07/22 00:18:40 by crenly-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ typedef struct	s_map
 	}		i_am : 1;
 }				t_map;
 
-typedef struct	s_piece
+typedef struct	s_p
 {
 	char	**map;
 	int		hight;
@@ -49,9 +49,16 @@ typedef struct	s_piece
 	int		bestsum;
 }				t_p;
 
-void	ft_mapcreate(char *line, t_map *map);
-void	ft_catchpiece(char *line, t_p *p);
-char	*ft_fromnbrtos(int n, t_map *map);
+
+void	ft_parsing(char *line, t_map *map, t_p *p);
+void	ft_createpiece(char *line, t_p *p);
+void	ft_heatmap(t_map *map);
+int		*ft_str4cpy(int *dst, char *src, int who);
+void	ft_printmap(t_map *map); // delete after finishing project
+
 void	ft_findposition(t_map *map, t_p *p);
+void	ft_str2del(char ***str);
+void	ft_intstr2del(t_map *map, int ***str);
+int		ft_strlen_num(int num);
 
 #endif
