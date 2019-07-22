@@ -1,28 +1,654 @@
-I am player 2
-
-map->hight= 15
-map->width= 17
-Piece 2 3:
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
 p->hight= 2
 p->width= 3
+I am staying here
 p->map[0]= .**
+I am staying here
+p->map[1]= **.
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= ***
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= ***
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= **.
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= .*
+I am staying here
+p->map[1]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= *.
+I am staying here
+p->map[1]= *.
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= .*
+I am staying here
+p->map[1]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= .*
+I am staying here
+p->map[1]= **
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= ***
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= **.
+I am staying here
+p->map[1]= **.
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ..*
+I am staying here
+p->map[1]= ..*
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= .*
+I am staying here
+p->map[1]= .*
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= .*.
+I am staying here
+p->map[1]= .*.
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ***
+I am staying here
+p->map[1]= **.
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= ***
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= **.
+I am staying here
 p->map[1]= ...
-         0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16
-|--|------------------------------------------------------------------------------------------------------|
-| 0|     9     8     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22|
-| 1|     8     7     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21|
-| 2|     7     6     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20|
-| 3|     6     5     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19|
-| 4|     5     4     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18|
-| 5|     4     3     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17|
-| 6|     3     2     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16|
-| 7|     2     1     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15|
-| 8|     1  1000  1000     1     2     3     4     5     6     7     8     9    10    11    12    13    14|
-| 9|     2     1     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15|
-|10|     3     2     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16|
-|11|     4     3     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17|
-|12|     5     4     4     5     6     7     8     9    10    11    12    13    14    15  2000    17    18|
-|13|     6     5     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19|
-|14|     7     6     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20|
-|--|------------------------------------------------------------------------------------------------------|
-p->bestsum= 100000 p->best_i= 12    p->best_j= 13   
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= **
+I am staying here
+p->map[1]= **
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= **.
+I am staying here
+p->map[1]= .**
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= **.
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= .*
+I am staying here
+p->map[1]= .*
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= *..
+I am staying here
+p->map[1]= *..
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= **
+I am staying here
+p->map[1]= *.
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ..*
+I am staying here
+p->map[1]= .**
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= ..
+I am staying here
+p->map[1]= **
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= *..
+I am staying here
+p->map[1]= **.
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ..*
+I am staying here
+p->map[1]= .**
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= *.
+I am staying here
+p->map[1]= .*
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= **
+I am staying here
+p->map[1]= **
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= *..
+I am staying here
+p->map[1]= *..
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= *..
+I am staying here
+p->map[1]= *..
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= ***
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ***
+I am staying here
+p->map[1]= ...
+p->hight= 3
+p->width= 6
+I am staying here
+p->map[0]= ...*..
+I am staying here
+p->map[1]= ...**.
+I am staying here
+p->map[2]= ...***
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ..*
+I am staying here
+p->map[1]= ..*
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= **.
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= **
+I am staying here
+p->map[1]= ..
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= *.
+I am staying here
+p->map[1]= *.
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= ***
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= .**
+I am staying here
+p->map[1]= .**
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ***
+I am staying here
+p->map[1]= .*.
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= .**
+I am staying here
+p->map[1]= .*.
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= *.
+I am staying here
+p->map[1]= **
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= *.
+I am staying here
+p->map[1]= *.
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= **
+I am staying here
+p->map[1]= ..
+p->hight= 4
+p->width= 7
+I am staying here
+p->map[0]= .......
+I am staying here
+p->map[1]= .......
+I am staying here
+p->map[2]= .......
+I am staying here
+p->map[3]= ....**.
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= .*
+I am staying here
+p->map[1]= .*
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ***
+I am staying here
+p->map[1]= ..*
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= *..
+I am staying here
+p->map[1]= *..
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= *..
+I am staying here
+p->map[1]= *..
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= ***
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= **
+I am staying here
+p->map[1]= **
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ..*
+I am staying here
+p->map[1]= .**
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= **.
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= .*.
+I am staying here
+p->map[1]= ***
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ..*
+I am staying here
+p->map[1]= ..*
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ...
+I am staying here
+p->map[1]= .**
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= **
+I am staying here
+p->map[1]= ..
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= *.
+I am staying here
+p->map[1]= *.
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= **.
+I am staying here
+p->map[1]= **.
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= ..
+I am staying here
+p->map[1]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= ***
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= .*.
+I am staying here
+p->map[1]= ***
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= *.
+I am staying here
+p->map[1]= **
+p->hight= 2
+p->width= 1
+I am staying here
+p->map[0]= *
+I am staying here
+p->map[1]= *
+p->hight= 1
+p->width= 2
+I am staying here
+p->map[0]= **
+p->hight= 1
+p->width= 7
+I am staying here
+p->map[0]= ****...
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= *..
+I am staying here
+p->map[1]= *..
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= **
+I am staying here
+p->map[1]= **
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= .*
+I am staying here
+p->map[1]= **
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= *..
+I am staying here
+p->map[1]= *..
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= ***
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= .*
+I am staying here
+p->map[1]= **
+p->hight= 2
+p->width= 3
+I am staying here
+p->map[0]= ***
+I am staying here
+p->map[1]= ...
+p->hight= 1
+p->width= 3
+I am staying here
+p->map[0]= .**
+p->hight= 2
+p->width= 2
+I am staying here
+p->map[0]= **
+I am staying here
+p->map[1]= **

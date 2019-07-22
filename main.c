@@ -6,7 +6,7 @@
 /*   By: crenly-b <crenly-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/15 13:33:09 by crenly-b          #+#    #+#             */
-/*   Updated: 2019/07/22 00:42:47 by crenly-b         ###   ########.fr       */
+/*   Updated: 2019/07/23 02:03:11 by crenly-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,10 @@ int		main(void)
 	int		fd;
 
 	line = NULL;
+	p.map = NULL;
+	map.onetime = 0;
 	fd = open("file.txt", O_RDWR);
-	ft_parsing(line, &map, &p);
-	close(fd);
+	while (1)
+		ft_working(line, &map, &p);
 	return (0);
 }

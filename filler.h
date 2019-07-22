@@ -6,7 +6,7 @@
 /*   By: crenly-b <crenly-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/15 13:35:46 by crenly-b          #+#    #+#             */
-/*   Updated: 2019/07/22 00:18:40 by crenly-b         ###   ########.fr       */
+/*   Updated: 2019/07/23 01:35:48 by crenly-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,14 @@ typedef struct	s_map
 {
 	int		**map;
 	char	str[5];
-	size_t	length;
 	int		hight;
 	int		width;
 	int		enemy;
+	int		onetime;
 	int		num;
 	int		i;
 	int		j;
-	enum {
-			player1,
-			player2
-	}		i_am : 1;
+	int		i_am : 1;
 }				t_map;
 
 typedef struct	s_p
@@ -41,16 +38,19 @@ typedef struct	s_p
 	int		hight;
 	int		width;
 	int		connection;
-	int		temp_i;
-	int		temp_j;
 	int		tempsum;
+	int 	max_i;
+	int		max_j;
 	int		best_i;
 	int		best_j;
+	int		help_i;
+	int		help_j;
+	int		mayak;
 	int		bestsum;
 }				t_p;
 
 
-void	ft_parsing(char *line, t_map *map, t_p *p);
+void	ft_working(char *line, t_map *map, t_p *p);
 void	ft_createpiece(char *line, t_p *p);
 void	ft_heatmap(t_map *map);
 int		*ft_str4cpy(int *dst, char *src, int who);
