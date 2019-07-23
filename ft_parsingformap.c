@@ -6,7 +6,7 @@
 /*   By: crenly-b <crenly-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 22:44:37 by crenly-b          #+#    #+#             */
-/*   Updated: 2019/07/23 01:53:10 by crenly-b         ###   ########.fr       */
+/*   Updated: 2019/07/23 15:42:14 by crenly-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static void		ft_newmap(t_map *map)
 static void		ft_whoami(char *line, t_map *map)
 {
 	get_next_line(0, &line);
-	if (ft_strstr(line, "$$$ exec") != NULL)
+	if (ft_strstr(line, "$$$ exec p2") != NULL)
 	{
 		map->i_am = 1;
 		//dprintf(3, "%s\n", "I am player 2\n");
@@ -101,6 +101,6 @@ void	ft_working(char *line, t_map *map, t_p *p)
 	ft_createmap(line, map);
 	ft_createpiece(line, p);
 	ft_heatmap(map);
-	//ft_printmap(map);
+	ft_printmap(map);
 	ft_findposition(map, p);
 }

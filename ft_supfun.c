@@ -6,7 +6,7 @@
 /*   By: crenly-b <crenly-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 23:19:04 by crenly-b          #+#    #+#             */
-/*   Updated: 2019/07/23 02:12:26 by crenly-b         ###   ########.fr       */
+/*   Updated: 2019/07/23 16:18:50 by crenly-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,8 +134,8 @@ void		ft_printmap(t_map *map)
 	int z;
 
 	z = 0;
-	dprintf(3, "         0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16\n");
-	dprintf(3, "|--|------------------------------------------------------------------------------------------------------|\n");
+	dprintf(3, "         0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15\n");
+	dprintf(3, "|--|------------------------------------------------------------------------------------------------|\n");
 	while (z < map->hight)
 	{
 		dprintf(3, "|%2d|", z);
@@ -154,7 +154,7 @@ void		ft_printmap(t_map *map)
 		dprintf(3, "%6s", ft_fromnbrtos(map->map[z][12], map));
 		dprintf(3, "%6s", ft_fromnbrtos(map->map[z][13], map));
 		dprintf(3, "%6s", ft_fromnbrtos(map->map[z][14], map));
-		dprintf(3, "%6s\n", ft_fromnbrtos(map->map[z][15], map));
+		dprintf(3, "%6s|\n", ft_fromnbrtos(map->map[z][15], map));
 		// dprintf(3, "%6s", ft_fromnbrtos(map->map[z][16], map));
 		// dprintf(3, "%6s", ft_fromnbrtos(map->map[z][17], map));
 		// dprintf(3, "%6s", ft_fromnbrtos(map->map[z][18], map));
@@ -181,5 +181,5 @@ void		ft_printmap(t_map *map)
 		// dprintf(3, "%6s\n", ft_fromnbrtos(map->map[z][39], map));
 		z++;
 	}
-	dprintf(3, "|--|------------------------------------------------------------------------------------------------------|\n");
+	dprintf(3, "|--|------------------------------------------------------------------------------------------------|\n");
 }
