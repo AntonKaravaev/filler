@@ -6,7 +6,7 @@
 /*   By: crenly-b <crenly-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 23:29:54 by crenly-b          #+#    #+#             */
-/*   Updated: 2019/07/22 21:37:24 by crenly-b         ###   ########.fr       */
+/*   Updated: 2019/07/23 19:40:28 by crenly-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static void		ft_fillinheatmap(t_map *map, int i, int j)
 	}
 }
 
-void	ft_heatmap(t_map *map)
+void			ft_heatmap(t_map *map)
 {
 	int i;
 	int j;

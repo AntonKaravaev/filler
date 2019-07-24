@@ -1,17 +1,19 @@
 NAME = crenly-b.filler
 
 SRCS = 	main.c\
-		ft_parsingformap.c\
-		ft_piece.c\
+		ft_createmap.c\
+		ft_createpiece.c\
 		ft_heatmap.c\
 		ft_findposition.c\
+		ft_get_cor_to_vrm.c\
 		ft_supfun.c
 
 OBJ = 	main.o\
-		ft_parsingformap.o\
-		ft_piece.o\
+		ft_createmap.o\
+		ft_createpiece.o\
 		ft_heatmap.o\
 		ft_findposition.o\
+		ft_get_cor_to_vrm.o\
 		ft_supfun.o
 
 INC = includes/
