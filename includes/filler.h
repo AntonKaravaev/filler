@@ -6,14 +6,14 @@
 /*   By: crenly-b <crenly-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/15 13:35:46 by crenly-b          #+#    #+#             */
-/*   Updated: 2019/07/23 22:27:24 by crenly-b         ###   ########.fr       */
+/*   Updated: 2020/02/12 17:50:33 by crenly-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLER_H
 # define FILLER_H
 
-# include "libft/libft.h"
+# include "libft.h"
 
 typedef struct	s_map
 {
@@ -47,8 +47,8 @@ typedef struct	s_p
 }				t_p;
 
 void			ft_working(char *line, t_map *map, t_p *p);
-void			ft_createmap(char *line, t_map *map);
-void			ft_createpiece(char *line, t_p *p);
+void			ft_createmap(char **line, t_map *map);
+void			ft_createpiece(char **line, t_p *p);
 void			ft_heatmap(t_map *map);
 int				*ft_str4cpy(int *dst, char *src, int who);
 void			ft_findposition(t_map *map, t_p *p);

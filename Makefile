@@ -1,5 +1,7 @@
 NAME = crenly-b.filler
 
+LIB = -L libft/ -lft
+
 SRCS = 	main.c\
 		ft_createmap.c\
 		ft_createpiece.c\
@@ -8,31 +10,43 @@ SRCS = 	main.c\
 		ft_get_cor_to_vrm.c\
 		ft_supfun.c
 
-OBJ = 	main.o\
-		ft_createmap.o\
-		ft_createpiece.o\
-		ft_heatmap.o\
-		ft_findposition.o\
-		ft_get_cor_to_vrm.o\
-		ft_supfun.o
+OBJS = 	objs/main.o\
+		objs/ft_createmap.o\
+		objs/ft_createpiece.o\
+		objs/ft_heatmap.o\
+		objs/ft_findposition.o\
+		objs/ft_get_cor_to_vrm.o\
+		objs/ft_supfun.o
 
-INC = includes/
+HEADER = -I includes -I libft/includes
 
 FLAGS = -Wall -Wextra -Werror
 
+.PHONY: all objs make_lib clean fclean re obj
+
 all: $(NAME)
 
-$(NAME) :
+objs/%.o: srcs/%.c includes/filler.h
+		gcc $(FLAGS) -c $< -o $@ $(HEADER)
+
+$(NAME) : obj make_lib $(OBJS) libft/libft.a 
+	@gcc -o $(NAME) $(OBJS) $(LIB)
+	@Echo ✅ Filler compiled!
+
+make_lib:
 	@make -C libft
-	@gcc $(FLAGS) -c $(SRCS) -I ./libft
-	@gcc $(OBJ) -L libft/ -lft -o $(NAME) -g
+
+obj:
+	@mkdir objs 2> /dev/null || true
 
 clean:
 	@make -C libft/ clean
-	@rm -f $(OBJ)
+	@rm -rf ./objs/
+	@echo 🛀 🛀 🛀 Clean $(NAME)
 
 fclean: clean
 	@make -C libft/ fclean
 	@rm -f $(NAME)
+	@echo 🛀 🛀 🛀 Fclean $(NAME)
 
 re: fclean all
